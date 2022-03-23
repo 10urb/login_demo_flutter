@@ -5,9 +5,11 @@ import 'package:login_demo_flutter/constants/main_helpers/routes/route_strings.d
 import 'package:login_demo_flutter/constants/project_theme.dart';
 import 'package:provider/provider.dart';
 
-void main() => runApp(LoginDemo());
+void main() => runApp(const LoginDemo());
 
 class LoginDemo extends StatelessWidget {
+  const LoginDemo({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(

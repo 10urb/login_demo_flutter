@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_final_fields
+
 import 'package:flutter/material.dart';
 import 'package:login_demo_flutter/models/weather_model/weather_model.dart';
 import 'package:login_demo_flutter/service/weather_service.dart';

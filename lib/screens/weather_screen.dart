@@ -43,7 +43,7 @@ class WeatherScreen extends StatelessWidget {
           ),
           title: Text('Degree: ${weather.degree}'),
           subtitle: Text(
-              'Date: ${weather.dayOfMonth}/${weather.month} ${weather.dayName}'),
+              'Date: ${weather.dayOfMonth} ${weather.month} ${weather.dayName}'),
         );
   }
 }

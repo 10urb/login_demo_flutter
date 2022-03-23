@@ -1,10 +1,11 @@
+// ignore_for_file: prefer_final_fields, must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:login_demo_flutter/business/weather_manager.dart';
 import 'package:login_demo_flutter/constants/main_helpers/routes/route_strings.dart';
 import 'package:login_demo_flutter/constants/strings/text_strings.dart';
 import 'package:login_demo_flutter/helper/environment.dart';
 import 'package:login_demo_flutter/models/login_response_model/login_response_model.dart';
-import 'package:login_demo_flutter/screens/common_widgets/in_button_white.dart';
 import 'package:provider/provider.dart';
 import '../../business/auth_manager.dart';
 import '../../constants/strings/button_strings.dart';
@@ -46,7 +47,7 @@ class LoginScreen extends StatelessWidget {
                     const Divider(),
                     LoginButton(formKey: _formKey),
                     const Divider(),
-                    RegisterButton(),
+                    const RegisterButton(),
                     const Divider(),
                   ]),
                 ),

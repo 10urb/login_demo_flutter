@@ -7,9 +7,9 @@ import 'package:login_demo_flutter/screens/weather_screen.dart';
 class NamedRoutes {
   static Map<String, WidgetBuilder> get routes {
     return {
-      RouteStrings.LOGIN: (BuildContext context) =>  LoginScreen(),
-      RouteStrings.REGISTER: (BuildContext context) =>  RegisterScreen(),
-      RouteStrings.WEATHER: (BuildContext context) =>  WeatherScreen(),
+      RouteStrings.LOGIN: (BuildContext context) => LoginScreen(),
+      RouteStrings.REGISTER: (BuildContext context) =>const  RegisterScreen(),
+      RouteStrings.WEATHER: (BuildContext context) => const WeatherScreen(),
     };
   }
 }

@@ -17,6 +17,7 @@ dependencies:
   provider: ^6.0.2
   # Json Helper
   json_annotation: ^4.4.0
+  # General Helpers
   form_field_validator: ^1.1.0
   date_field: ^3.0.0
 
@@ -32,6 +33,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # Assets
+ # Assets
   assets:
     - assets/images/

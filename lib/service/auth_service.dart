@@ -8,7 +8,6 @@ import 'package:login_demo_flutter/models/login_response_model/login_response_mo
 import 'package:login_demo_flutter/models/register_model/register_model.dart';
 
 class AuthService extends BaseService<AuthService> {
-  //Singleton Pattern
   static final AuthService _singleton = AuthService._internal();
   factory AuthService() => _singleton;
   AuthService._internal();

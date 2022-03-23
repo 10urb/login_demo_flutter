@@ -29,8 +29,8 @@ class ProjectTheme {
   static TextTheme get _textTheme =>
       const TextTheme(bodyText2: TextStyle(color: Colors.black));
 
-  static AppBarTheme get _appBarTheme =>
-      AppBarTheme(centerTitle: true, backgroundColor: Colors.lightBlue,titleSpacing: 20);
+  static AppBarTheme get _appBarTheme => const AppBarTheme(
+      centerTitle: true, backgroundColor: Colors.blueGrey, titleSpacing: 20);
 
   static IconThemeData get _primaryIconTheme =>
       const IconThemeData(color: Colors.teal);

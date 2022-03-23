@@ -17,11 +17,9 @@ class BaseService<T> {
 
     var response = await http.get(Uri.parse(id == null ? uri1 : uri),
         headers: Environment.apiHeader);
-    print(Environment.apiHeader);
     switch (response.statusCode) {
       case HttpStatus.ok:
         var result = jsonBodyParser<T>(modelData, response.body);
-        print(result);
         return result;
 
       case HttpStatus.badRequest:
@@ -48,7 +46,6 @@ class BaseService<T> {
 
     var response = await http.post(Uri.parse(uri),
         body: toJson, headers: Environment.apiHeader);
-    print(toJson);
     switch (response.statusCode) {
       case HttpStatus.ok:
         Toastr.buildSuccessToast("✔");

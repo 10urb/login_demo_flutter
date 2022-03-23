@@ -1,7 +1,6 @@
-// ignore_for_file: prefer_final_fields
+// ignore_for_file: prefer_final_fields, must_be_immutable
 
 import 'package:flutter/material.dart';
-import 'package:login_demo_flutter/business/weather_manager.dart';
 import 'package:login_demo_flutter/constants/strings/text_strings.dart';
 import 'package:login_demo_flutter/constants/strings/title_strings.dart';
 import 'package:login_demo_flutter/models/register_model/register_model.dart';
@@ -10,6 +9,7 @@ import 'package:login_demo_flutter/screens/auth_screens/widgets/password_field.d
 import 'package:login_demo_flutter/screens/common_widgets/in_date_time_form_field.dart';
 import 'package:login_demo_flutter/screens/common_widgets/in_text_form_field.dart';
 import 'package:provider/provider.dart';
+
 import '../../business/auth_manager.dart';
 import '../../constants/main_helpers/routes/route_strings.dart';
 import '../../constants/strings/button_strings.dart';
@@ -19,7 +19,7 @@ import '../common_widgets/in_button_colorful.dart';
 import '../common_widgets/loading_widget.dart';
 
 class RegisterScreen extends StatefulWidget {
-  RegisterScreen({Key? key}) : super(key: key);
+  const RegisterScreen({Key? key}) : super(key: key);
 
   @override
   State<RegisterScreen> createState() => _RegisterScreenState();
